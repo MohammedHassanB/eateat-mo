@@ -134,6 +134,11 @@ const controlAddRecipe= async function(newRecipe)
        addRecipeView.renderError(err.message);
   }
 } 
+
+const newf=function()
+{
+  console.log(hello);
+}
 const init=function()
 {
 bookmarksView.addhandlerRender(controlBookmarks);
@@ -143,7 +148,7 @@ recipeView.addHnadlerAddBookmark(controlAddBookmark);
 searchView.addHandlerSearch(showSearchResults);
 paginationView.addHandlerClick(showPagination);
 addRecipeView.addHandlerUpload(controlAddRecipe);
-
+newf();
 }
 init();
 // https://forkify-api.herokuapp.com/v2
